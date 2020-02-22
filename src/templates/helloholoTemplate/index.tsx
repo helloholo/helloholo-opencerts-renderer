@@ -1,6 +1,6 @@
 import { CertificateTemplate } from "./certificateTemplate";
-import { GradeTemplate } from "./gradeTemplate";
-import { AboutTemplate } from "./aboutTemplate";
+//import { GradeTemplate } from "./gradeTemplate";
+//import { AboutTemplate } from "./aboutTemplate";
 
 export const templates = [
   {
@@ -8,7 +8,7 @@ export const templates = [
     label: "Certificate",
     template: CertificateTemplate
   },
-  {
+  /*{
     id: "grade",
     label: "Grade",
     template: GradeTemplate
@@ -17,5 +17,5 @@ export const templates = [
     id: "about",
     label: "About",
     template: AboutTemplate
-  }
+  }*/
 ];
