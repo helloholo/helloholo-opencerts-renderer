@@ -2,10 +2,7 @@ import { Document } from "@govtechsg/decentralized-renderer-react-components";
 
 export interface HelloHoloOpencertsTemplateCertificate extends Document {
   name: string;
-  description: string;
   issuedOn: string;
-  admissionDate: string;
-  graduationDate: string;
   recipient: {
     name: string;
   };
