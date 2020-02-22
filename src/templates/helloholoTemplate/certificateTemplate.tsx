@@ -4,20 +4,17 @@ import React, { FunctionComponent } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
-import { GovtechOpencertsTemplateCertificate } from "../samples";
+import { HelloHoloOpencertsTemplateCertificate } from "../samples";
 import helloholoLogo from "./common/helloholo-logo-blue-horizontal.svg";
 
-export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencertsTemplateCertificate>> = ({
+export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpencertsTemplateCertificate>> = ({
   document
 }) => (
   <>
     <div
-      className="p-2 container"
+      className="container p-2"
       style={{
-        backgroundImage: `url()`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        border: "10px solid #324353"
+        border: "1px solid #324353"
       }}
     >
       <div
@@ -27,7 +24,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
         }}
       >
         <div className="my-5 m-lg-5 text-center">
-          <img src={helloholoLogo} alt="HelloHolo Logo" style={{ width: "60%", height: "auto", maxWidth: "1000px" }} />
+          <img src={helloholoLogo} alt="HelloHolo Logo" style={{ width: "40%", height: "auto", maxWidth: "1000px" }} />
         </div>
         <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-body" style={{ textAlign: "center" }}>
           <i>This is to certify that</i>
