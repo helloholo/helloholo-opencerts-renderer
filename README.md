@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7c7bd1c-05e1-4d05-b9e3-3762fe4d9715/deploy-status)](https://app.netlify.com/sites/helloholo-opencerts/deploys)
 
-Our implementation of the [OpenCerts decentralized renderer](https://github.com/Open-Attestation/decentralized-renderer-react-template).
+Our certificate templates created from the [OpenCerts decentralized renderer](https://github.com/Open-Attestation/decentralized-renderer-react-template).
 
 ## Install
 
