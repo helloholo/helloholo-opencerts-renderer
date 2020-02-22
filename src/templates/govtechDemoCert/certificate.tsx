@@ -80,12 +80,6 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
                 backgroundColor: "#333"
               }}
             />
-            <div>
-              <b>{get(document, "additionalData.certSignatories[0].name")}</b>
-              <br />
-              {get(document, "additionalData.certSignatories[0].position")},{" "}
-              {get(document, "additionalData.certSignatories[0].organisation")}
-            </div>
           </div>
 
           <div className="col" />
