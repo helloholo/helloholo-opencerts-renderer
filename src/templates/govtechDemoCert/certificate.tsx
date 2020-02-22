@@ -97,7 +97,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<GovtechOpencer
               paddingRight: "5%"
             }}
           >
-            Dated {format(document.issuedOn, "DD/MM/YYYY")}
+            Dated 2 Dec 19
           </div>
         </div>
       </div>
