@@ -5,6 +5,6 @@ import { templates as govtechDemoTemplates } from "./govtechDemoCert";
 
 export const registry: TemplateRegistry<any> = {
   default: helloholoTemplates,
-  HELLOHOLO: helloholoTemplates,
+  HELLOHOLO_MRDC: helloholoTemplates,
   GOVTECH_DEMO: govtechDemoTemplates,
 };
