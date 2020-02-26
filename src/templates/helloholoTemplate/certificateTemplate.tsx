@@ -1,11 +1,14 @@
 import { format } from "date-fns";
 import { get } from "lodash";
 import React, { FunctionComponent } from "react";
+import Moment from 'react-moment';
+
 import "bootstrap/dist/css/bootstrap.css";
 
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { HelloHoloOpencertsTemplateCertificate } from "../samples";
 import helloholoLogo from "./common/helloholo-logo-blue-horizontal.svg";
+import axensionStudiosLogo from "./common/axension-studios-logo.svg";
 
 export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpencertsTemplateCertificate>> = ({
   document
@@ -24,7 +27,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpenc
         }}
       >
         <div className="my-5 m-lg-5 text-center">
-          <img src={helloholoLogo} alt="HelloHolo Logo" style={{ width: "40%", height: "auto", maxWidth: "1000px" }} />
+          <img src={axensionStudiosLogo} alt="Axension Studios Logo" style={{ width: "30%", height: "auto", maxWidth: "1000px" }} />
         </div>
         <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-body" style={{ textAlign: "center" }}>
           <i>This is to certify that</i>
@@ -36,7 +39,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpenc
           <i>has successfully completed the</i>
         </div>
         <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-title" style={{ textAlign: "center" }}>
-          Mixed Reality Developer Course
+          {document.name}
         </div>
         <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-body" style={{ textAlign: "center" }}>
           <i>through training administered by</i>
@@ -90,7 +93,9 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpenc
               paddingRight: "5%"
             }}
           >
-            Dated 31 December 2019
+            <Moment format="d MMMM YYYY">
+              {document.issuedOn}
+            </Moment>
           </div>
         </div>
       </div>

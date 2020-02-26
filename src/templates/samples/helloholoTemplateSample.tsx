@@ -25,7 +25,7 @@ export interface HelloHoloOpencertsTemplateCertificate extends Document {
 export const helloholoTemplateCertificate: HelloHoloOpencertsTemplateCertificate = {
 	id: "d58f0963-ce84-4b3e-95bb-e71aee953df5",
 	name: "Mixed Reality Developer Course",
-	issuedOn: "2020-12-31T23:59:32+08:00",
+	issuedOn: "2019-12-31T23:59:32+08:00",
 	$template: {
 		name: "HELLOHOLO_MRDC",
 		type: "EMBEDDED_RENDERER",
