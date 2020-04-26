@@ -1,0 +1,30 @@
+body {
+    background: white;
+    font-family: "Source Sans Pro", sans-serif;
+    /* line-height: 1.5;
+    margin: 0px; */
+}
+
+.cert-title {
+    font-family: "Lora", serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.cert-title-extra {
+    font-family: "Lora", serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cert-recipient-name {
+    font-family: "Lora", serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cert-course-name {
+    font-family: "Lora", serif;
+    font-size: 28px;
+    font-weight: bold;
+}
