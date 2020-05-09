@@ -24,14 +24,20 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpenc
             Certificate of Completion
           </div>
 
-          {(document.transcript[0].grade == "Merit" || document.transcript[0].grade == "Distinction") && (
+          {(document.transcript[0].grade.toUpperCase() == "PASS") && (
             <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-title-extra">
-              with {document.transcript[0].grade}
             </div>
           )}
 
-          {(document.transcript[0].grade == "Pass") && (
+          {(document.transcript[0].grade.toUpperCase() == "MERIT") && (
             <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-title-extra">
+              with Merit
+            </div>
+          )}
+
+          {(document.transcript[0].grade.toUpperCase() == "DISTINCTION") && (
+            <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-title-extra">
+              with Distinction
             </div>
           )}
 
