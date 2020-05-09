@@ -28,3 +28,10 @@ body {
     font-size: 28px;
     font-weight: bold;
 }
+
+.cert-signature {
+    font-family: "Damion", serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}

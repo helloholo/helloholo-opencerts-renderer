@@ -64,7 +64,7 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpenc
           </div>
 
           <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-body">
-            conducted by Axension Studios LLP and HelloHolo Pte Ltd.
+            conducted by Axension Studios LLP.
           </div>
 
           <div style={{ minHeight: "80px" }}>
@@ -73,17 +73,10 @@ export const CertificateTemplate: FunctionComponent<TemplateProps<HelloHoloOpenc
           <div className="row mt-4">
             <div className="col" />
             <div className="col">
-              <img
-                style={{ width: "100%", height: "45%" }}
-                src={get(document, "additionalData.certSignatories[0].signature")}
-              />
-              <hr
-                style={{
-                  border: "none",
-                  height: "1px",
-                  backgroundColor: "#333"
-                }}
-              />
+              <div className="cert-signature">{get(document, "additionalData.certSignatories[0].signature")}</div>
+
+              <hr style={{ border: "none", height: "1px", backgroundColor: "#333" }} />
+              
               <div className="text-center">
                 <span>{get(document, "additionalData.certSignatories[0].name")}</span><br />
                 <span>{get(document, "additionalData.certSignatories[0].position")}</span><br />
