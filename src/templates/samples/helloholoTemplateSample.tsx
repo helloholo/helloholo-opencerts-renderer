@@ -56,7 +56,7 @@ export const helloholoTemplateCertificate: HelloHoloOpencertsTemplateCertificate
 		{
 			"courseCode": "MR101",
 			"name": "Mixed Reality Developer Course",
-			"grade": "Distinction",
+			"grade": "DISTINCTION",
 			"url": "https://www.helloholo.sg/",
 			"description": "HelloHolo's Mixed Reality Developer course aims to expose course attendees to the digital future of mixed reality and immersive media through the Microsoft HoloLens. Course attendees will have hands-on experience with the Microsoft HoloLens headset as well as other competing headsets. They are expected to learn the basics of mixed reality development using C# programming and Unity 3D. The course will be taught by HelloHolo’s pioneer mixed reality developers who are also industry experts in the field. The course comprises of 21 hours of course content in total."
 		}
